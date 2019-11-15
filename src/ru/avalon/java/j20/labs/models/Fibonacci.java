@@ -22,7 +22,27 @@ public class Fibonacci implements Iterable<Integer> {
      * Итератор, выполняющий обход последовательности
      * чисел Фибоначчи.
      */
+    private int size;
+    private int[] array;
+        
+    public void setArray (int size) {        
+        this.size = size;
+        array[0] = 0;
+        array[1] = 1;
+        
+        for (int i = 2; i < size; i++) {
+            array[i] = array[i-1] + array[i-2];
+        }
+    }
+    
+    public int[] getArray() {
+        return array;
+    }
+        
+    
     private static class FibonacciIterator implements Iterator<Integer> {
+        
+        
 
         /**
          * Определяет, есть ли следующее значение
@@ -45,6 +65,7 @@ public class Fibonacci implements Iterable<Integer> {
          */
         @Override
         public Integer next() {
+            
             throw new UnsupportedOperationException("Not implemented yet!");
         }
     }

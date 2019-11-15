@@ -28,4 +28,5 @@ public class RandomArrayFactory implements Factory<int[], Integer> {
         }
         return array;
     }
+    
 }
