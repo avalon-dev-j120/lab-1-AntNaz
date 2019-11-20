@@ -19,7 +19,7 @@ public class Task4 implements Task {
         Person b = new Person("Иван", "Иванов");
         boolean isEqual = a.equals(b);
         
-        // Для проверки hashCode.
+        // Переменные ниже введены для проверки hashCode.
         int i = a.hashCode();
         int j = b.hashCode();
         /*
