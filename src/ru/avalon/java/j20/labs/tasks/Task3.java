@@ -11,9 +11,16 @@ import ru.avalon.java.j20.labs.models.Fibonacci;
  * <p>Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
  */
 public class Task3 implements Task {
+    private int[] array;
 
     @Override
     public void run() {
+        Fibonacci arrayFib = new Fibonacci();
+        arrayFib.setArray(32);
+        System.out.println(arrayFib.getArray()[15]);
+
+
+        
         
 
         /*

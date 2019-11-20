@@ -22,11 +22,11 @@ public class Fibonacci implements Iterable<Integer> {
      * Итератор, выполняющий обход последовательности
      * чисел Фибоначчи.
      */
-    private int size;
-    private int[] array;
+
+    private int[] array;    
         
-    public void setArray (int size) {        
-        this.size = size;
+    public void setArray (int size) { 
+        array = new int[size];
         array[0] = 0;
         array[1] = 1;
         

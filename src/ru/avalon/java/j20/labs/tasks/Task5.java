@@ -1,10 +1,12 @@
 package ru.avalon.java.j20.labs.tasks;
 
+import java.util.ArrayList;
 import ru.avalon.java.j20.labs.Task;
 import ru.avalon.java.j20.labs.core.RandomArrayFactory;
 
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Задание №5.
@@ -25,9 +27,15 @@ public class Task5 implements Task {
     public void run() {
         final int[] array = arrayFactory.getInstance(20);
 
-        List<Integer> list = null;
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i<array.length; i++) {
+            list.add(array[i]);
+        }
 
-        Set<Integer> set = null;
+        Set<Integer> set = new TreeSet<>();
+        for (int i = 0; i<array.length; i++) {
+            set.add(array[i]);
+        }
 
         /**
          * TODO(Студент): Выполните задание №5
