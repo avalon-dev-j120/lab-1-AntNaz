@@ -11,13 +11,23 @@ import ru.avalon.java.j20.labs.models.Fibonacci;
  * <p>Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
  */
 public class Task3 implements Task {
-    private int[] array;
-
     @Override
     public void run() {
-        Fibonacci arrayFib = new Fibonacci();
-        arrayFib.setArray(32);
-        System.out.println(arrayFib.getArray()[15]);
+        int size = 20;        
+        Fibonacci arrayFib = new Fibonacci(size);
+        Iterator<Integer> itFib = arrayFib.iterator();
+        
+        int summ = 0;
+      
+        
+//        while (itFib.hasNext()) {
+//            summ = summ + itFib.next();            
+//        }
+        for(Integer fib : arrayFib) {
+            summ += fib;
+        }
+        
+        System.out.println(summ);
 
 
         

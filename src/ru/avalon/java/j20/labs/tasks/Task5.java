@@ -32,10 +32,10 @@ public class Task5 implements Task {
             list.add(array[i]);
         }
 
-        Set<Integer> set = new TreeSet<>();
-        for (int i = 0; i<array.length; i++) {
-            set.add(array[i]);
-        }
+        Set<Integer> set = new TreeSet<>(list);
+//        for (int i = 0; i<array.length; i++) {
+//            set.add(array[i]);
+//        }
 
         /**
          * TODO(Студент): Выполните задание №5

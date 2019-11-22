@@ -44,8 +44,10 @@ public class Person {
     }
     @Override
     public boolean equals(Object obj){
+        if(obj == null || this.getClass() != obj.getClass()) return false;
+        
         Person other = (Person) obj;        
-        return ((name == other.name)&&(surname == other.surname)&& (this.getClass() == obj.getClass())&& other != null);
+        return ((name == other.name)&&(surname == other.surname));
     }
     @Override
     
