@@ -1,5 +1,7 @@
 package ru.avalon.java.j20.labs;
 
+
+import ru.avalon.java.j20.labs.models.Fibonacci;
 import ru.avalon.java.j20.labs.tasks.*;
 
 /**
@@ -36,6 +38,11 @@ public class Application {
          * порядок и/или закомментировать любой из элементов
          * массива.
          */
+       
+        
 	    for (Task task : tasks) task.run();
+            
+
+            
     }
 }

@@ -22,12 +22,27 @@ public class Task1 implements Task {
     /**
      * {@inheritDoc}
      */
-    @Override
+    
     public void run() {
-        int[] array = arrayFactory.getInstance(20);
-        int min = Numbers.min(array);
-        int max = Numbers.max(array);
+        
+        
+        //Integer[] array = arrayFactory.getInstance(20);
+        Integer[] array = {23, 566, 6, 4};
+        Double[] array2 = {3.5, 6.2, 6., 5.};
+        
+        double min = Numbers.min(array);
+        double max = Numbers.max(array);
         double avg = Numbers.avg(array);
+        
+        //Double[] array2 = arrayFactory.getInstance(20);
+        
+        double min2 = Numbers.min(array2);
+        double max2 = Numbers.max(array2);
+        double avg2 = Numbers.avg(array2);
+        
+        
+        
+        
         /*
          * TODO(Студент): Выполните задание №1
          *

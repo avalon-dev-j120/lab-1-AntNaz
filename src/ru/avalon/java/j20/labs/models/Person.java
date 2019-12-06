@@ -42,4 +42,21 @@ public class Person {
     public String getSurname() {
         return surname;
     }
+    @Override
+    public boolean equals(Object obj){
+        if(obj == null || this.getClass() != obj.getClass()) return false;
+        
+        Person other = (Person) obj;        
+        return ((name == other.name)&&(surname == other.surname));
+    }
+    @Override
+    
+    public int hashCode() {
+        final int PRIME = 31;
+        int result = 1;
+        result = PRIME*result + name.hashCode();
+        result = PRIME*result + surname.hashCode();
+        return result;
+    }
+    
 }
